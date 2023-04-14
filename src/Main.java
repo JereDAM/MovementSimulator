@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 import mapa.Mapa;
 
 public class Main {
     public static void main(String[] args) {
 
-        Mapa miMapa = new Mapa(10);
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("¿Como de grande quieres el mapa?");
+        int tamanioMapa = teclado.nextInt();
 
-        miMapa.dibujarMapa(10);
+        Mapa miMapa = new Mapa(tamanioMapa);
+        
+        
+        teclado.close();
     }
 }
