@@ -12,7 +12,7 @@ public class Main {
 
         Mapa miMapa = new Mapa(tamanioMapa);
         
-        
+
         teclado.close();
     }
 }
